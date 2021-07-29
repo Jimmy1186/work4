@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+  max-width: 100%;
+}
+
+:root {
+  --color-green: hsla(157, 74%, 62%, 1);
+  --color-light-green: hsla(157, 100%, 85%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-gray: hsla(225, 40%, 83%, 1);
+  --color-dark-gray: hsla(225, 21%, 45%, 1);
+  --color-light-black: hsla(225, 26%, 23%, 1);
+  --color-black: hsla(224, 35%, 11%, 1);
+  --color-red: hsla(0, 100%, 50%, 1);
+}
+
+
+body {
+  height: 100%;
+  background-color: var(--color-black);
+}
+header img {
+  padding-top: 20%;
+}
+.wrapper {
+  height: 100%;
+  background-image: url("./../img/tablet/image-host-tablet.jpg");
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  background-size: cover;
+  background-position: initial;
+}
+.loge {
+  width: 100%;
+}
+header {
+  position: relative;
+  display: flex;
+  background-color: var(--color-black);
+  width: 35%;
+  height: 30%;
+  padding:0 5%;
+}
+
+main {
+  position: relative;
+  background-color: var(--color-black);
+  height: 90%;
+  width: 80%;
+  padding: 5%;
+}
+.error{
+  font-size: 1em;
+  color: var(--color-red);
+  padding: 0 0 5%;
+}
+h1 {
+  font-family: "Chivo", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  padding: 10% 0;
+}
+
+h1 span {
+  color: var(--color-green);
+}
+
+#infor {
+  color: var(--color-gray);
+  font-weight: 100;
+}
+
+form {
+  padding: 10% 0;
+}
+
+input {
+  width: 90%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--color-light-black);
+  color: var(--color-gray);
+  font-size: 1rem;
+  outline: none;
+  margin: 5%;
+}
+
+#submit {
+  width: 90%;
+  height: 50px;
+  color: var(--color-black);
+  font-size: 0.9em;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--color-green);
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+  margin: 5%;
+}
+
+ul li {
+  display: inline;
+}
+ul li a {
+  text-decoration: none;
+}
+
+ul li img {
+  max-width: 60px;
+}
+
+.partners {
+  display: flex;
+  max-width: 100%;
+}
+
+.partners div {
+  padding: 0 2%;
+}
+
+@media only screen and (max-width: 375px) {
+  html {
+    height: 100%;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: hsl(0deg 0% 0% / 68%);
+    background-blend-mode: darken;
+    background-image: url("./../img/mobile/image-host-mobile.jpg");
+    background-position: center;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+
+  .error{
+    text-align: center;
+  }
+
+
+  h1,
+  #infor {
+    text-align: center;
+    line-height: 1.5em;
+  }
+
+  header {
+    align-items: center;
+    background: none;
+  }
+  main {
+    background: none;
+    padding: 0;
+  }
+  main::after {
+    background: none;
+  }
+}
+
+
+@media only screen and (min-width:768px) {
+  body{
+    padding: 5% 0 5% 5%;
+  }
+  main{
+    width: 50%;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  form{
+    padding:5% 0
+  }
+
+  input,#submit{
+    margin:0
+
+  }
+  
+  input{
+    margin-bottom:5%;
+
+  }
+  .wrapper {
+
+    background-image: url("./../img/desktop/image-host.jpg");
+    background-position: top;
+  }
+}
